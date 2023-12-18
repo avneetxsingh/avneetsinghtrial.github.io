@@ -35,9 +35,9 @@ body {
 
 .sidebar a.active {
     text-decoration: none;
-    color: #ffffff !important; /* Green text color for active link */
+    color: #00bcd4 !important; /* Green text color for active link */
     background-color: #000000; /* Darker background for active link */
-    font-size: 1.5em; /* Increase font size for active link */
+    font-size: 1.7em; /* Increase font size for active link */
     transition: color 0.3s ease;
 }
 
@@ -115,7 +115,9 @@ nav a:hover {
 }
 
 .experience,
-.project {
+.project,
+.certificates,
+.publications {
     margin-bottom: 20px;
     background-color: #111; /* Dark background color */
     border-radius: 8px;
@@ -125,13 +127,17 @@ nav a:hover {
 }
 
 .experience:hover,
-.project:hover {
+.project:hover,
+.certificates:hover,
+.publications:hover {
     background-color: #222; /* Slightly darker background on hover */
     transform: scale(1.02);
 }
 
 .experience h3,
-.project h3 {
+.project h3,
+.certificates h3,
+.publications h3 {
     color: #00ff00; /* Green heading color */
 }
 
@@ -192,10 +198,30 @@ button:hover {
 .bottom-bar a:hover {
     color: #00bcd4; /* Change color on hover */
 }
+/* Update the color for all links with an href, excluding footer links */
+a[href] {
+    text-decoration: none;
+    color: #fff; /* White color for all links with an href, excluding footer links */
+    font-size: 1.1em;;
+    transition: color 0.3s ease;
+}
+
+a[href]:hover {
+    color: #00bcd4; /* Change color on hover */
+}
+
 
 footer {
     padding: 20px 0;
     text-align: center;
     background-color: #343a40;
     color: #e0e0e0;
+}
+/* Add the following styles for the social media logos in the footer */
+.footer-logo {
+    text-align: center;
+    width: 30px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px; /* Adjust spacing between logos */
+    margin-left: 10px;
 }
