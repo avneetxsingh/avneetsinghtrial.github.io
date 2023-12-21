@@ -225,3 +225,40 @@ footer {
     margin-right: 10px; /* Adjust spacing between logos */
     margin-left: 10px;
 }
+
+/* Existing styles */
+
+@media only screen and (max-width: 600px) {
+    /* Mobile styles */
+
+    .sidebar {
+        height: auto;
+        position: static;
+        opacity: 1; /* Adjust as needed */
+    }
+
+    .sidebar ul {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .sidebar a {
+        display: block;
+        padding: 10px;
+    }
+
+    .main-content {
+        margin-top: 20px; /* Adjust spacing */
+    }
+
+    .center-container {
+        margin-left: 5%; /* Adjust margin */
+    }
+
+    .name h1 {
+        font-size: 4em; /* Adjust the size for mobile */
+    }
+
+    /* Add other mobile-specific styles */
+}
